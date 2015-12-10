@@ -1,8 +1,8 @@
-# mycalcisme
+# Mycalcisme
 
 mycalcisme is an open source web application. It works like a game that will make you have fun and exercise your brain at the same time!
 
-# demo:
+# The Demo:
 
 [www.applicationdevweb.com/mycalcisme](http://www.applicationdevweb.com/mycalcisme)
 
