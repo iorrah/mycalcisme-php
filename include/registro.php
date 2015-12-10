@@ -21,7 +21,7 @@ if(isset($_POST['txtNameUser']) && $_POST['txtNameUser']!="" && isset($_POST['bt
 				</div>
 				<div id="helperTip">
 					<p><b>Controls:</b> you can use <i>Space Bar</i> to skip some question and <i>Enter</i> do submit answer. There are also buttons with these functions.</p>
-					<p><b>Developer:</b> the phpaper - Gaspar, Gab.</p>
+					<p><b>Developer:</b> Iorrah Gonzalez.</p>
 				</div>
 			</form>
 		</div>

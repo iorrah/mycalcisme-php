@@ -17,7 +17,7 @@ if(isset($_SESSION['partidasJogadas']) && $_SESSION['partidasJogadas']>0 && isse
 		,".$_SESSION['quantErros']."
 		,'".date("Y-m-d H:i:s")."'
 	);";
-	$RS = mysql_query($SQL, $cConecta) or die(mysql_error());
+	$RS = mysqli_query($cConecta, $SQL) or die(mysqli_error());
 }
 ?>
 <div class="desktop">
@@ -41,13 +41,13 @@ if(isset($_SESSION['partidasJogadas']) && $_SESSION['partidasJogadas']>0 && isse
 						ORDER BY
 						      pontuacao
 						DESC;";
-						$RS = mysql_query($SQL,$cConecta) or die(mysql_error());
-						if(mysql_num_rows($RS)==0){
+						$RS = mysqli_query($cConecta,$SQL) or die(mysqli_error());
+						if(mysqli_num_rows($RS)==0){
 						?>
 							<tr><td colspan="2">Nenhum resultado encontrado!</td></tr>
 						<?	
 						}else{
-							while($RSArr = mysql_fetch_array($RS)){
+							while($RSArr = mysqli_fetch_array($RS)){
 							?>
 								<tr><td><?=$RSArr[0];?></td><td><?=$RSArr[1];?></td></tr>
 							<?
