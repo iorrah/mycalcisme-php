@@ -1,15 +1,16 @@
 <?
+
 session_start();
 
-if(!isset($_SESSION['quantAcertos'])){
+if (!isset($_SESSION['quantAcertos'])) {
 	$_SESSION['quantAcertos'] = 0;
 }
 
-if(!isset($_SESSION['quantErros'])){
+if (!isset($_SESSION['quantErros'])) {
 	$_SESSION['quantErros'] = 0;
 }
 
-if(isset($_POST['numN3']) && isset($_POST['btnCalcular'])){
+if (isset($_POST['numN3']) && isset($_POST['btnCalcular'])) {
 
 	switch ($_POST['hddOperador']) {
 		
@@ -32,19 +33,19 @@ if(isset($_POST['numN3']) && isset($_POST['btnCalcular'])){
 
 	}
 
-	if($resultReal==$_POST['numN3']){
+	if ($resultReal==$_POST['numN3']) {
 		$mensagemResult = "Parabéns, você acertou!!! <br><br><br>";
 		$idResult = 1;
 		$_SESSION['quantAcertos']++;
 		$hexaFundo = "#1AC685";
-	}else{
+	} else {
 		$mensagemResult = "Vish... Incorreto. Mais sorte na próxima vez! (: <br><br><br>";
 		$idResult = 2;
 		$_SESSION['quantErros']++;
 		$hexaFundo = "#CA222B";
 	}
 
-}else{
+} else {
 	$mensagemResult = "";
 }
 
@@ -64,7 +65,7 @@ $operador = $arrOperadores[$indexOperador];
 	<script src="jquery-1.11.2.min.js"></script>
 </head>
 <body>
-	<div class="desktop" <?if(isset($hexaFundo)){?>style="background-color: <?=$hexaFundo;?> !important;"<?}?>>
+	<div class="desktop" <?if (isset($hexaFundo)) {?>style="background-color: <?=$hexaFundo;?> !important;"<?}?>>
 		<div class="middle">
 		<div class="calculadora">
 			<form method="post" name="formCalc" id="formCalc">
@@ -87,34 +88,34 @@ $operador = $arrOperadores[$indexOperador];
 		</div>
 	</div>
 	<script type="text/javascript">
-		$(function(){
-			$("#btnPular").click(function(){
+		$(function() {
+			$("#btnPular").click(function() {
 				fPular();
 			});
-			$("#numN3").blur(function(){
+			$("#numN3").blur(function() {
 				$("#numN3").focus();
 			});
-			$("#numN3").keypress(function(e){
+			$("#numN3").keypress(function(e) {
 				var keyCode = e.which;
 				var keyVal = String.fromCharCode(!event.charCode ? event.which : event.charCode);
 				var regex = new RegExp("^[0-9]+$");
-			    if(keyCode==32){
+			    if (keyCode==32) {
 			    	fPular();
 			    	return;
 			    }
-			    if(keyCode==13){
+			    if (keyCode==13) {
 			    	fCalcular();
 			    	return;
 			    }
-			    if(!regex.test(keyVal)){
+			    if (!regex.test(keyVal)) {
 			    	return false;
 			    }
 			});
 		});
-		function fPular(){
+		function fPular() {
 			window.location = "calc.php";
 		}
-		function fCalcular(){
+		function fCalcular() {
 			$("#formCalc").submit();
 		}
 	</script>
