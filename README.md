@@ -6,21 +6,15 @@ mycalcisme is an open source web application. It works like a game that will mak
 
 [www.applicationdevweb.com/mycalcisme](http://www.applicationdevweb.com/mycalcisme)
 
-.. image:: applicationdevweb.com/media/demo_A.png
-    :alt: Get Started!
-    :align: center
+![alt tag](http://applicationdevweb.com/media/demo_A.png)
 
 -----
 
-.. image:: applicationdevweb.com/media/demo_B.png
-    :alt: The Game
-    :align: center
+![alt tag](http://applicationdevweb.com/media/demo_B.png)
 
 -----
 
-.. image:: applicationdevweb.com/media/demo_C.png
-    :alt: Congratulations!
-    :align: center
+![alt tag](http://applicationdevweb.com/media/demo_C.png)
 
 ## Contribute!
 
