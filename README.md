@@ -2,20 +2,6 @@
 
 mycalcisme is an open source web application. It works like a game that will make you have fun and exercise your brain at the same time!
 
-## The Demo
-
-[www.applicationdevweb.com/mycalcisme](http://www.applicationdevweb.com/mycalcisme)
-
-![alt tag](http://applicationdevweb.com/media/demo_A.png)
-
------
-
-![alt tag](http://applicationdevweb.com/media/demo_B.png)
-
------
-
-![alt tag](http://applicationdevweb.com/media/demo_C.png)
-
 ## Contribute!
 
 Help me improving this amazing ideia! Give opinions and suggestions!
@@ -31,12 +17,7 @@ Currently it is written using:
  - PHP;
  - MySQL.
 
-Our challenge will be to rewrite it with:
-
- - HTML5;
- - CSS3;
- - JavaScript;
- - JSON.
+Our challenge will be to rewrite it in the more scalable and cleaver way as possbie!
 
 ## Get in touch
 
