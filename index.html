@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mycalcisme</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<!--[if IE]><link rel="shortcut icon" href="images/favicon.png"><![endif]-->
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body>
+	<div class="desktop" style="background-color: #1AC685 !important;">
+		<div class="middle">
+		<div class="calculadora">
+			<form method="post" name="formCalc" id="formCalc">
+				<div class="boxQuantAcertos font-white">05</div>
+				<div class="boxQuantErros font-white">02</div>
+				<div class="quebraFloat"></div>
+				<input type="hidden" name="hddN1" id="hddN1" value="" />
+				<input type="hidden" name="hddN2" id="hddN2" value="" />
+				<input type="hidden" name="hddOperador" id="hddOperador" value="" />
+				<label class="boxEquacao" for="numN3">123 + 33 = </label>
+				<div class="boxResultado">
+					<input type="text" name="numN3" id="numN3" value="" autofocus required maxlength="3" class="caixaTexto numero" />
+				</div>
+				<div class="boxBotao">
+					<input type="submit" value="Send" name="btnCalcular" id="btnCalcular" class="botaoSucesso" />
+					<input type="button" value="Skip" name="btnPular" id="btnPular" class="botaoInfo" />
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/javascript.js"></script>
+</body>
+</html>
